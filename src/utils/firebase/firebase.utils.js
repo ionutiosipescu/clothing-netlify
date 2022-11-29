@@ -43,6 +43,8 @@ const firebaseApp = initializeApp(firebaseConfig);
 
 const googleProvider = new GoogleAuthProvider();
 
+// open pop up with select account
+// googleprovider = unul din conturile tale de google
 googleProvider.setCustomParameters({
   prompt: "select_account",
 });

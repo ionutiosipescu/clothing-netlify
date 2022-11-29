@@ -16,6 +16,7 @@ import { useSelector } from "react-redux";
 
 const Navigation = () => {
   const currentUser = useSelector((state) => state.user.currentUser);
+  console.log(currentUser);
   const isCartOpen = useSelector(selectIsCartOpen);
   // aici putem sa vedem daca userul s-a logat ii afisam sign out daca nu sing in
   // in momentul in care userul apasa pe sign out , currentUser devine null
